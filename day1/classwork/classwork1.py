@@ -7,5 +7,3 @@ num2 = 10
 print(num2 / 2)
 num2 = 15
 print(num2 * 5)
-
-

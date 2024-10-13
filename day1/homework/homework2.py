@@ -1,10 +1,10 @@
 #mother
-print("eka maisuradze")
+print("eka")
 #father 
-print("giorgi tabatadze")
+print("giorgi")
 #friend
-print("luka arsenidze")
+print("luka")
 #grandmother(mom)
-print("dali maisuradze")
+print("dali")
 #grandmother(father)
-print("manana tabatadze")
+print("manana")
