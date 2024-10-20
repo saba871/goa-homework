@@ -52,14 +52,9 @@ age = (float(input("what's your age? ")))
 print(type(age))
 
 
-#  მომხარებელს შემოატანინეთ მისი ასაკი და სახელი, შემდეგ შეამოწმეთ არის თუ არა ის სრულწლოვანი და უდრის თუ არა მისი სახელი თქვენს სახელს
-
 name =(str(input("what's your name? "))) 
 age = (int(input("what's your age? ")))
 if age < 18:
     print('your are kid. ')
 elif age >= 18:
     print("you are an adult. ")
-elif name == ("saba"):
-    print("saba is also my name <333 ") 
-    
