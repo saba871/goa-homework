@@ -23,4 +23,3 @@ print (even_sum)
 total_sum = sum(range(1, 51))
 print (total_sum)
 
-
