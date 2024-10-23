@@ -30,5 +30,5 @@ else:
         print()
 # მომხარებელს შემოატანინეთ რიცხვი და შეინახეთ ის ცვლადში. შემდეგ დაბეჭდეთ შემოტანილი რიცხვის ჩათვლით ყველა რიცხვის კვადრატის ჯამი
 random_number = int(input("Enter any number : "))
-sum_of_squares = sum(i ** 2 for i in range(1,random_number + 1))
+sum_of_squares = sum(i * 2 for i in range(random_number + 1))
 print(sum_of_squares)
