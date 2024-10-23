@@ -14,6 +14,6 @@ print("congratulations! you won <3 ")
 sum = 0
 number = 1
 while number <= 50:
-    sum =sum + number   
+    sum = sum + number  
     number = number + 1
 print("from 1 to 50 sum is", sum)
