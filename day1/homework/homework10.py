@@ -29,6 +29,19 @@ elif any_number == 0:
 else:
         print()
 # მომხარებელს შემოატანინეთ რიცხვი და შეინახეთ ის ცვლადში. შემდეგ დაბეჭდეთ შემოტანილი რიცხვის ჩათვლით ყველა რიცხვის კვადრატის ჯამი
-random_number = int(input("Enter any number : "))
-sum_of_squares = sum(i * 2 for i in range(random_number + 1))
-print(sum_of_squares)
+user_num = int(input("Enter any number : "))
+sum = 0
+for num in range(user_num + 1):
+        sum = sum + num * num 
+print(sum)       
+# თამაში "რიცხვის გამოცნობა". შექმენით ცვლადი და შეინახეთ რომელიმე რიცხვი 1-დან 20-ის ჩათვლით(ეს იქნება ჩაფიქრებული რიცხვი). გამოიყენეთ while loop-ი და მომხარებელს შემოატანინეთ რიცხვი იქამდე სანამ არ გამოიცნობს მას. თუ მომხარებლის მიერ შემოტანილი რიცხვი მეტია ჩაფიქრებულზე, დაპრინტეთ To high, თუ ნაკლებია Too low, ხოლო იმ შემთხვევაში თუ მომხარებელი გამოიცნობს რიცხვს დაპრინტეთ "You win"
+secret_num = 7
+user_num = 0
+while user_num != secret_num:
+        user_num =int(input("what is your number? "))
+if user_num > secret_num:
+        print("your number is too high")
+elif user_num < secret_num :
+        print("your number is too low")
+else:
+        print("congratulations,you guess the right number")
