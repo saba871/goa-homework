@@ -31,10 +31,10 @@ print("The number one is included",count,"times")
 list1 =[]
 list2 =[]
 for i in range(5):
-    word = input("enter the world: ")
-    if len(word) <= 5:
-        list1.append(word)
+    user_words = input("enter the world: ")
+    if len(user_words) <= 5:
+        list1.append(user_words)
     else:
-        list2.append(word)
+        list2.append(user_words)
 print(list1)
 print(list2)
