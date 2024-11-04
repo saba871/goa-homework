@@ -7,7 +7,6 @@ for number in numbers:
 print("largerst number is", largestnumber)  
 # 3) შექმენით რიცხვების სია და დაბეჭდეს სიის თითოეული რიცხვის ფაქტორიალი
 list = [1, 2, 3, 4, 5]
-
 # 4) შექმენით სია სადაც გექნებათ რიცხვები. for loop-ის გამოყენებით იპოვეთ ამ სიაში ყველაზე პატარა რიცხვი
 numbers =[1, 2, 3, 4, 5, 6, 7, 8, 9, 10] 
 smallestnum = numbers[0]
@@ -38,7 +37,7 @@ reverse = text[::-1]
 print(reverse)
 # 9) დაწერეთ პროგრამა, რომელიც მომხამრებელს შემოატანინებს რიცხვს და აბრუნებს სიას, სადაც იქნება გამდოცემული რიცხვის ყველა გამყოფი
 usernumber = int(input("enter any number: "))
-separator = [i for i in range (1,usernumber + 1)if usernumber % i ==0]
+separator = [i for i in range (1,usernumber + 1) if usernumber % i ==0]
 print("seperators",separator)
 # 10) შექმენით პროგრამა, რომელიც მომხარებელს შემოატანინებს წელს და დაპრინტავს რომელი საუკუნეა ის
 randomyear = int(input("tell me any year and i will tell you that which century is it"))
