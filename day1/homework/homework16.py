@@ -36,8 +36,17 @@ text = "hello my friend"
 reverse = text[::-1]
 print(reverse)
 # 9) დაწერეთ პროგრამა, რომელიც მომხამრებელს შემოატანინებს რიცხვს და აბრუნებს სიას, სადაც იქნება გამდოცემული რიცხვის ყველა გამყოფი
-usernumber = int(input("enter any number: "))
-separator = [i for i in range (1,usernumber + 1) if usernumber % i ==0]
-print("seperators",separator)
+number = int(input("Enter a number: "))
+divisors = []
+for i in range(1, number + 1):
+    if number % i == 0:
+        divisors.append(i)
+print(divisors)
 # 10) შექმენით პროგრამა, რომელიც მომხარებელს შემოატანინებს წელს და დაპრინტავს რომელი საუკუნეა ის
-randomyear = int(input("tell me any year and i will tell you that which century is it"))
+years = int(input("Enter the number of years: "))
+century = years // 100
+remaining_years = years % 100
+if remaining_years == 0:
+    print(century)
+else:
+    print(century + 1)
