@@ -14,7 +14,7 @@ for number in numbers:
         min_number = number
     if number > max_number:
         max_number = number
-sum = min_number + max_number
+sum = min_number  +max_number
 print(sum)
 # 5) შექმენით რიცხვების სია, გადაუარეთ მას for loop-ით, გაიგეთ რამდენი ლუწი და რამდენი კენტი რიცხვი გვაქვს სიაში და დაბეჭდეთ მათი რაოდენობა
 nums = [1,2,3,4,5,6,7,8,9,10] 
@@ -36,3 +36,12 @@ for number in numbers:
     else:
         new.append(False)
 print(new)
+# 4) შექმენით ცვლადი სადაც შეინახავთ სთრინგს და გაიგეთ, არის თუ არა ის პალინდრომი(პალინდრომი არის ისეთი სიტყვა, რომელიც ორივე მხრიდან ერთნაირად იკითხება, მაგალითად, "ana"...)
+word = "ana"
+reversed_word = ""
+for i in range(len(word) - 1, -1, -1):
+        reversed_word = reversed_word + word[i]
+if word == reversed_word:
+        print("word is palindrome")
+else:
+        print("word is not palindrome")
