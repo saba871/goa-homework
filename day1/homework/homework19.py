@@ -26,7 +26,34 @@ reverse ([1,2,3,4,5,6,7,8,9,10])
 # შექმენით ფუნქცია, რომელსაც გადაეცემა ორი რიცხვების სია, გადაურეთ ორივეს for ციკლით და გაიგეთ თითოეულ სიაში რიცხვების ჯამი(შეინახეთ ცალკე ცვლადებში), გაამრავლეთ ორივე ერთმანეთზე და დააბრუნეთ
 
 # შექმენით ფუნქცია, რომელსაც გადაეცემა სიმბოლოების სია. ფუნქციამ უნდა დააბრუნოს ეს სია პირველი და ბოლო ელემენტების გარეშე, გამოიყენეთ slicing
-def name():
-    names = ["Nika", "Luka", "Saba"]
-    return names[1:-1]
-name()
+def random(symbols):
+    return symbols[1:-1]
+symbols = ['!', '@', '#', '$', '%', '&', '*']
+print(random(symbols))
+# შექმენით ფუნქცია, რომელსაც გადაეცემა რიცხვების სია. გადაუარეთ ამ სიას for ციკლით და ჩაამატეთ მხოლოდ ლუწი რიცხვები ახალ სიაში. საბოლოოდ დააბრუნეთ ეს სია
+def random(numbers):
+    result = []
+    for num in numbers:
+        if num % 2 == 0:
+            result.append(num)
+    return result
+num = [1, 2, 3, 4, 5, 6, 7, 8, 9] 
+print(random(num))
+# შექმენით ფუნქცია, რომელსაც გადაეცემა სახელების სია. შექმენით ახალის სია, სადაც ჩაამატებთ გადმოცემული სიიდან მხოლოდ იმ სახელებს, რომლებიც იწყება "N"-ზე`. საბოლოოდ დააბრუნეთ ეს სია
+def random(names):
+    result = []
+    for name in names:
+        if name[0]=="n":
+            result.append(name)
+    return result
+names = ["saba","nika","luka","nini","nia"]
+print(random(names))
+
+
+
+
+age = 18
+if age >= 18:
+    print("you are an adult")
+else:
+    print("you are a child")
