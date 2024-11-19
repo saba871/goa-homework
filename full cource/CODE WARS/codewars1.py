@@ -32,5 +32,6 @@ def remove_char(s):
 # Write a function that accepts an integer n and a string s as parameters, and returns a string of s repeated exactly n times.
 def repeat_str(repeat, string):
     return string * repeat
+# Create a function that takes a number as an argument, and this function must print all numbers from 1 to the number passed
 def summation(num):
     return sum(range(1, num + 1))
