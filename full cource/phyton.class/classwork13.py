@@ -19,7 +19,7 @@ print(upper_and_lower("HellO, MY namE IS Nika"))
 
 
 
-# capitalize ფუნქციის კლონი
+''' capitalize ფუნქციის კლონი'''
 def manual_capitalize(string):
 
     first_char = string[0].upper()
@@ -33,7 +33,7 @@ print(manual_capitalize("HELLO"))
 
 
 
-# title ფუნქციის კლონი 
+'''title ფუნქციის კლონი '''
 def manual_title(string1):
     is_space = False
 
@@ -53,3 +53,10 @@ def manual_title(string1):
 
 
 print(manual_title("hEllo mY NAME is NikA"))
+
+
+def greet(name):
+    name = ("enter your name: ")
+    print("hello" + name)
+
+name = ("enter your name: ")

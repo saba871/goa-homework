@@ -47,3 +47,15 @@ def random(names):
 names = ["saba","nika","luka","nini","nia"]
 print(random(names))
 # შექმენით ფუნქცია, რომელსაც გადაეცემა ორი რიცხვების სია, გადაურეთ ორივეს for ციკლით და გაიგეთ თითოეულ სიაში რიცხვების ჯამი(შეინახეთ ცალკე ცვლადებში), გაამრავლეთ ორივე ერთმანეთზე და დააბრუნეთ
+
+def digitize(n):
+
+    nums_in_list = []
+    
+    for number in str(n):
+        if int(number) > 0:
+            nums_in_list.append(int(number))
+    return nums_in_list 
+            
+
+print (digitize(12345))
