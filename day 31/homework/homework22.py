@@ -23,17 +23,18 @@ def manual_pop(numbers,index):
     
 print(manual_pop([1,2,3,4,5,6],3))
 
-# 3) შექმენით ფუნქცია manual_len, რომელსაც გადაეცემა სთრინგი ან სია, ხოლო ფუნქციამ უნდა დააბრუნოს გადმოცემული სთრინგის/სიის სიგრძე(არ გამოიყენოთ len-ი)
+# 3) შექმენით ფუნქცია manual_len, რომელსაც გადაეცემა სთრინგი ან სია, ხოლო ფუნქციამ უნდა დააბრუნოს გადმოცემული სთრინგის/სიის სიგრძე
+# (არ გამოიყენოთ len-ი)
 
 def manual_len(strirg,random_list):
 
     count = 0
 
     for i in strirg:
-        if strirg in random_list == i:
 
             count += 1
 
-        return count
+    return count
 
-print(manual_len('saba',[]))
+random_list = ["openhaimer"]
+print(manual_len('openhaimer',random_list))
