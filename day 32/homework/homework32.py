@@ -17,11 +17,25 @@ print(numbers[::-1])
 # მგალითად თუ string-ში 5 "a" გვხვდება, რიცხვი 5 მასივში მხოლოდ ერთხელ უნდა ჩავამატოთ, მაგრამ სხვა სიმბოლოც თუ
 #  გვხვდება იგივე რაოდენობით, მას ვამატებთ ჩვეულებრივ). საბოლოდ დაასორტირეთ მიღებული სია ზრდადობით და
 #  დააბრუნეთ
-def count_of_symbols(string1):
-    
-    counted_symbols = []
+def symbol_count(string1):
+    symbols = []
     for i in string1:
-        string1.count(i)
-        counted_symbols.append(i)
-    return counted_symbols
-print(count_of_symbols("saba"))
+        if i not in symbols:
+            symbols.append(i)
+    return len(symbols)
+
+print(symbol_count("ana"))
+
+# manual_range
+
+# def ფუნქციის არგუმნეტებს default - ად ვაძლევთ ქარხნულ მნიშვნელობას
+def manual_range(end,start = 0, step = 1):
+# სანამ start არ არის ნაკლები end არგუმნეტზე
+    while start <= end: 
+# ტერმინალში გამოიტანე start - ის იმ დროინდელი მნიშვნელობა
+        print(start)
+# start არგუმნეტს ვუმატებთ step - ს რადგან მომხმარებელს აქვს უფლება step -ს მისცემს ის მნიშვნელობა რომელიც მას სურს
+# ანუ სტეპ ყოვლეთვის ერთი შეიძლება არ იყოს 
+        start += step
+
+print(manual_range(20,1,2))

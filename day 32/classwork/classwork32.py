@@ -27,11 +27,10 @@ print(manual_join(list("phyton"),"-"))
 # რომლის რაოდენობაც უნდა გაიგოთ. დააბრუნეთ მიღებული შედეგი.
 def manual_count(string1,element):
     count = 0
-    for i in string1:
+    for i in string1: 
         if i == element:
             count += 1
     return count
-
 
 
 
