@@ -10,7 +10,7 @@ def prime_factors (n):
 
 
 def vowel_indices(word):
-    vowels = "aeiouAEIOU"
+    vowels = "aeiouyAEIOUY"
     result = []  
     for char in range(len(word)):
         if word[char] in vowels:
