@@ -33,3 +33,13 @@ def dup(arry):
         result.append(new_string)
     
     return result
+
+
+def tringle(n):
+    if n % 2 == 0: n -= 1
+    spaces = n // 2
+
+    for i in range(1, n + 1, 2):
+        print(spaces * " " + "*" * i)
+        spaces -= 1
+tringle(5)
