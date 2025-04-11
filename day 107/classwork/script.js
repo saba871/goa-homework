@@ -14,13 +14,15 @@ document.getElementById("start").addEventListener("click", () => {
     }
   }, 1000);
 });
+
+// pause
+document.getElementById("pause").addEventListener("click", () => {
+  clearInterval(timer);
+  document.getElementById("paragraph").textContent = `last second: ${timer}`;
+});
+
 // reset
 document.getElementById("reset").addEventListener("click", () => {
   seconds = 0;
-  document.getElementById("paragraph").textContent = `last second: ${seconds}`;
-});
-// pause
-document.getElementById("pause").addEventListener("click", () => {
-  clearInterval(seconds);
   document.getElementById("paragraph").textContent = `last second: ${seconds}`;
 });
