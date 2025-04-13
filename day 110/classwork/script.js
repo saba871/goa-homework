@@ -1,7 +1,14 @@
-let count=0;
-let simplefunction=document.getElementById("count");
+function addProduct() {
+    let user = prompt("Enter any name: ");
+    if (user) {
+        let add = document.getElementById("products");
+        let newproduct = document.createElement("li");
+        newproduct.textContent = user;
 
-function increment(){
-    count++;
-    simplefunction.innerText=count;
+        newproduct.addEventListener("click", () => {
+            add.removeChild(newproduct)
+        })
+        
+        add.appendChild(newproduct);
+    }
 }
