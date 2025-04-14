@@ -12,5 +12,3 @@ function moveon() {
     current++;
 }
 // setInterval(moveon, 3000);
-
-moveon();
