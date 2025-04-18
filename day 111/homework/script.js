@@ -2,7 +2,7 @@ const input = document.getElementById("input");
 const button = document.getElementById("btn");
 const list = document.getElementById("list");
 
-button.addEventListener("click", function addTask() {
+button.addEventListener("click", () => {
     const text = input.value;
     if (text === "") {
         alert("Enter any Task: ");
@@ -13,7 +13,7 @@ button.addEventListener("click", function addTask() {
 
     const deleteBtn = document.createElement("button");
     deleteBtn.textContent = "Delete";
-    deleteBtn.style.marginLeft = "20px"
+    deleteBtn.style.marginLeft = "20px";
 
     deleteBtn.addEventListener("click", () => {
         li.remove();
