@@ -1,3 +1,4 @@
+//
 const greet = (num1, num2, ...names) => {
     console.log(num1);
     console.log(num2);
