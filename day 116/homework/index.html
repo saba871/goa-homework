@@ -6,11 +6,36 @@
         <title>Document</title>
     </head>
     <body>
-        <form id="my-form">
-            <input type="text" id="text" placeholder="Enter your name:" required />
-            <input type="email" id="email" placeholder="Enter your email:" required />
-            <input type="password" id="pass" placeholder="Enter your password:" required />
-            <button id="btn">submit</button>
+        <h1>Register</h1>
+        <form>
+            <label for="name">Name</label>
+            <br />
+            <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Please eneter your name"
+            />
+            <br /><br />
+            <label for="email">Email</label>
+            <br />
+            <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Please eneter your email"
+            />
+            <br /><br />
+            <label for="password">Password</label>
+            <br />
+            <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Please eneter your password"
+            />
+            <br /><br />
+            <button>Register</button>
         </form>
         <script src="./scrpt.js"></script>
     </body>

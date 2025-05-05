@@ -1,23 +1,46 @@
-const form = document.querySelector("form");
-const text = document.getElementById("text");
-const email = document.getElementById("email");
-const password = document.getElementById("pass");
-const button = document.getElementById("btn");
+const myForm = document.querySelector("form");
 
-form.addEventListener("submit", (e) => {
-    e.preventDefault();
+const users = [];
 
-    if (text.value == "" || email.value == "" || password == "") {
-        alert("enter all form");
-        return;
+class User {
+    constructor(name, email, password) {
+        this._name = name;
+        this._email = email;
+        this._password = password;
     }
-    class User {
-        constructor(text, email, password) {
-            this._text = text;
-            this._email = email;
-            this._password = password;
+
+    get name() {
+        return this._name;
+    }
+
+    set password(newPass) {
+        if (newPass.length > 4) {
+            this._password = newPass;
         }
     }
-    const userInfo = new User(text.value, email.value, password.value);
-    console.log(userInfo);
+}
+
+const validateForm = () => {
+    const name = myForm.name.value;
+    const email = myForm.email.value;
+    const password = myForm.password.value;
+
+    if (!name || !email || !password) {
+        alert("Please fill out all fields!");
+        return;
+    } else if (password.length <= 4) {
+        alert("Password is too short!");
+        return;
+    }
+
+    alert("Register is successful");
+    users.push(new User(name, email, password));
+    console.log(users);
+    myForm.reset();
+};
+
+myForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    validateForm();
 });
