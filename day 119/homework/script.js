@@ -31,6 +31,7 @@ function render(productsArray) {
                 <img width='200' src='${product.image}'/>
                 <p>${product.description}</p>
                 <p><strong>$${product.price}</strong></p>
+                <button>add to cart</button>
             </section>
             <hr />
         `;
